@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+    <person>
+        <firstName>יוסי</firstName>
+        <lastName>כהן</lastName>
+        <address>רחוב ירושלים 1</address>
+        <postcode>12345</postcode>
+        <city>תל אביב</city>
+        <phone>054-1234567</phone>
+        <email>yosi@example.com</email>
+    </person>
+    <person>
+        <firstName>מרים</firstName>
+        <lastName>לוי</lastName>
+        <address>רחוב בן גוריון 5</address>
+        <postcode>54321</postcode>
+        <city>חיפה</city>
+        <phone>054-7654321</phone>
+        <email>miriam@example.com</email>
+    </person>
+    <person>
+        <firstName>דוד</firstName>
+        <lastName>פרץ</lastName>
+        <address>רחוב גולדה מאיר 3</address>
+        <postcode>67890</postcode>
+        <city>ירושלים</city>
+        <phone>050-1112233</phone>
+        <email>david@example.com</email>
+    </person>
+</people>
