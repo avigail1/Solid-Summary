@@ -53,6 +53,7 @@ public class TestWatcherExtension implements TestWatcher {
      */
     @Override
     public void testDisabled(ExtensionContext context, Optional<String> reason) {
-        System.out.println("Test " + context.getDisplayName() + " was disabled. Reason: " + reason.orElse("No reason provided"));
+        System.out.println("Test " + context.getDisplayName() + " was disabled. Reason: "
+                + reason.orElse("No reason provided"));
     }
 }

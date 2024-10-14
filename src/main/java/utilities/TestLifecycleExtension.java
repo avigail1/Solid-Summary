@@ -50,26 +50,26 @@ public class TestLifecycleExtension implements BeforeAllCallback, AfterAllCallba
     /**
      * Determines if the current parameter can be resolved by this extension.
      *
-     * @param parameterContext the context of the parameter being resolved.
-     * @param extensionContext the context of the test execution.
+     * @param pContext the context of the parameter being resolved.
+     * @param eContext the context of the test execution.
      * @return true if the parameter is of type WebDriver, false otherwise.
      * @throws ParameterResolutionException if an error occurs during parameter resolution.
      */
     @Override
-    public boolean supportsParameter(ParameterContext parameterContext, ExtensionContext extensionContext) throws ParameterResolutionException {
-        return parameterContext.getParameter().getType().equals(WebDriver.class);  // Inject WebDriver into test methods
+    public boolean supportsParameter(ParameterContext pContext, ExtensionContext eContext) {
+        return pContext.getParameter().getType().equals(WebDriver.class);  // Inject WebDriver into test methods
     }
 
     /**
      * Resolves the parameter to be injected into the test method.
      *
-     * @param parameterContext the context of the parameter being resolved.
-     * @param extensionContext the context of the test execution.
+     * @param pContext the context of the parameter being resolved.
+     * @param eContext the context of the test execution.
      * @return the WebDriver instance to be injected.
      * @throws ParameterResolutionException if an error occurs during parameter resolution.
      */
     @Override
-    public Object resolveParameter(ParameterContext parameterContext, ExtensionContext extensionContext) throws ParameterResolutionException {
+    public Object resolveParameter(ParameterContext pContext, ExtensionContext eContext) {
         return driver;  // Provide the WebDriver instance
     }
 }

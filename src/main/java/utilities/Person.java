@@ -24,7 +24,8 @@ public class Person {
      * @param phone the phone number of the person.
      * @param email the email address of the person.
      */
-    public Person(String firstName, String lastName, String address, String postcode, String city, String phone, String email) {
+    public Person(String firstName, String lastName, String address, String postcode,
+                  String city, String phone, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
